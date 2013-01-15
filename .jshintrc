@@ -1,0 +1,27 @@
+{
+    "globals": {
+        "it": false,
+        "console": false,
+        "process": false,
+        "describe": false,
+        "expect": true,
+        "beforeEach": false,
+        "afterEach": false,
+        "before": false,
+        "after": false
+    },
+    "evil": true,
+    "node": true,
+    "browser": true,
+    "es5": true,
+    "asi": true,
+    "strict": false,
+    "eqeqeq": true,
+    "latedef": true,
+    "immed": true,
+    "undef": true,
+    "unused": false,
+    "trailing": true,
+    "funcscope": true,
+    "sub": true
+}

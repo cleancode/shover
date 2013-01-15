@@ -1,0 +1,43 @@
+test:
+    env: test
+    http:
+        host: localhost
+        port: 9001
+    redis:
+        conf: redis.conf
+        host: localhost
+        port: 6379
+        db: 1
+
+development:
+    env: development
+    http:
+        host: localhost
+        port: 9000
+    redis:
+        conf: redis.conf
+        host: localhost
+        port: 6379
+        db: 0
+
+staging:
+    env: staging
+    http:
+        host: localhost
+        port: 9001
+    redis:
+        conf: redis.conf
+        host: localhost
+        port: 6379
+        db: 1
+
+production:
+    env: production
+    http:
+        host: localhost
+        port: 9000
+    redis:
+        conf: redis.conf
+        host: localhost
+        port: 6379
+        db: 0
