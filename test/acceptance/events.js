@@ -22,9 +22,7 @@ describe("shover", function() {
   describe("POST /events", function() {
     before(function() {
       this.event = {
-        event: {
-          say: "I'm excited, this is my first event (blush)"
-        }
+        say: "I'm excited, this is my first event (blush)"
       }
     })
 
@@ -43,7 +41,7 @@ describe("shover", function() {
     it("should push the event to all clients", function(done) {
       var mocha = this
       this.client.on("data", function(event) {
-        expect(JSON.parse(event)).to.be.eql(mocha.event.event)
+        expect(JSON.parse(event).event).to.be.eql(mocha.event)
         done()
       })
       this.request.post("/events")
