@@ -125,8 +125,8 @@ function forever(commands, conf) {
           case "shover":
             return util.format(
               "forever start -a -o %s -e %s --watch=true server.js",
-              path.join(PROJECT.logs_directory, "shower-stdout.log"),
-              path.join(PROJECT.logs_directory, "shower-stderr.log")
+              path.join(PROJECT.logs_directory, "shover-stdout.log"),
+              path.join(PROJECT.logs_directory, "shover-stderr.log")
             )
           case "redis":
             return util.format(
